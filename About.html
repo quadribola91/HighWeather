@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-300 md:bg-gray-400">
+    <div class="navbar fixed top-0 left-0 w-full z-50 mb-20 bg-gray-400">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="menu-toggle md:hidden">
+          <button id="menuToggleBtn">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+        <div class="logo flex items-center">
+          <img src="Images/highC.jpeg" class="w-12 h-12 rounded-full" />
+          <p class="text-white ml-2">HighCloud Weather</p>
+        </div>
+        <div class="menu-items hidden md:flex space-x-4">
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="About.html" class="text-white">About</a></li>
+            <li><a href="Contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden mb-20">
+        <ul class="flex flex-col space-y-2">
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="index.html" class="text-white">Home</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="About.html" class="text-white">About</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="Contact.html" class="text-white">Contact</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- About section with video and latest news -->
+    <section class="bg-gray-100 py-12 mt-12">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-center"
+      >
+        <!-- Video section -->
+        <div
+          class="max-w-2xl mx-auto text-center mb-8 md:mb-0 md:mr-4 md:w-1/2"
+        >
+          <h2 class="text-3xl font-semibold text-gray-800 mb-6">
+            About HighWeather
+          </h2>
+          <div class="mb-8">
+            <!-- Embedded video -->
+            <div class="videoWrapper">
+              <!-- Replace VIDEO_ID with the actual video ID from YouTube -->
+              <iframe
+                width="100%"
+                height="300"
+                src="https://www.youtube.com/embed/RkKIqhjzt9M"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <p class="text-lg text-gray-600 mb-8">
+            HighWeather is your go-to weather application for accurate and
+            up-to-date weather information. Our mission is to provide users with
+            a seamless experience to check the weather forecast for any location
+            worldwide.
+          </p>
+          <p class="text-lg text-gray-600 mb-8">
+            With HighWeather, you can easily access current weather conditions,
+            hourly and daily forecasts, and detailed weather data such as
+            temperature, humidity, wind speed, and more. Whether you're planning
+            a trip, organizing outdoor activities, or simply staying informed
+            about the weather, HighWeather has you covered.
+          </p>
+          <p class="text-lg text-gray-600">
+            Powered by advanced weather APIs, HighWeather ensures accuracy and
+            reliability in delivering weather forecasts. Our user-friendly
+            interface and intuitive design make it easy for anyone to use,
+            whether you're a weather enthusiast, traveler, or everyday user.
+          </p>
+        </div>
+
+        <!-- Latest news section -->
+        <div class="bg-white py-8 md:w-1/2 md:ml-4">
+          <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">
+              Latest News
+            </h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <!-- List of latest news with images -->
+              <ul class="text-left">
+                <li class="news-item flex mb-4">
+                  <img
+                    src="./Images/news1.jpg"
+                    alt="News Image 1"
+                    class="w-16 h-16 mr-4"
+                  />
+                  <p class="flex-grow">
+                    HighWeather releases new mobile app version
+                  </p>
+                </li>
+                <li class="news-item flex mb-4">
+                  <img
+                    src="./Images/real11.webp"
+                    alt="News Image 2"
+                    class="w-16 h-16 mr-4 rounded-full"
+                  />
+                  <p class="flex-grow">
+                    Upcoming feature: Real-time weather alerts
+                  </p>
+                </li>
+                <li class="news-item flex mb-4">
+                  <img
+                    src="./Images/news44.webp"
+                    alt="News Image 3"
+                    class="w-16 h-16 mr-4 rounded-full"
+                  />
+                  <p class="flex-grow">
+                    HighWeather partners with leading weather data providers
+                  </p>
+                </li>
+                <!-- Add more news items with images as needed -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- Logo -->
+        <img
+          src="./Images/highC.jpeg"
+          alt="Logo"
+          class="w-12 h-12 md:w-24 md:h-24 mb-4 md:mb-0 rounded-full"
+        />
+
+        <!-- Newsletter -->
+        <div class="max-w-lg mx-auto mb-4 md:mb-0">
+          <h3 class="text-lg font-semibold mb-2">
+            Subscribe to Our Newsletter
+          </h3>
+          <form action="#" method="post" class="flex">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              class="w-full px-4 py-2 rounded-l-lg border-gray-300 focus:outline-none focus:border-blue-400"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+        <!-- Social media links -->
+        <div>
+          <a
+            href="https://www.facebook.com/Quadribola91/"
+            class="text-xl text-white mr-4"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://wa.me/+2349058824643" class="text-xl text-white mr-4"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="https://twitter.com/AbdulahiOmo" class="text-xl text-white"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p>&copy; 2024 HighCloud Weather App. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

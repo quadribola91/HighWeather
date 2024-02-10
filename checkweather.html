@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-400">
+   <div class="navbar fixed top-0 left-0 w-full z-50 mb-20 bg-gray-400">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="menu-toggle md:hidden">
+          <button id="menuToggleBtn">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+        <div class="logo flex items-center">
+          <img src="Images/highC.jpeg" class="w-12 h-12 rounded-full" />
+          <p class="text-white ml-2">HighCloud Weather</p>
+        </div>
+        <div class="menu-items hidden md:flex space-x-4">
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="About.html" class="text-white">About</a></li>
+            <li><a href="Contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden mb-20">
+        <ul class="flex flex-col space-y-2">
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="index.html" class="text-white">Home</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="About.html" class="text-white">About</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="Contact.html" class="text-white">Contact</a>
+            </button>
+          </li><li>
+            <button class="bg-gray-900 mt-4 p-4">
+              <a href="Contact.html" class="text-white">Check Weather</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<section class="mt-12 mb-20 h-600">
+    
+
+    <div class="mt-20">
+      <h2 class="text-center text-white text-3xl font-bold border-1 border:shadow-md">Check Weather </h2>
+    </div>
+
+    <div class="card mx-auto my-0 justify-center mb-8">
+      <div class="search flex items-center justify-center px-4">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+          class="w-3/4 px-4 py-2 bg-white text-black rounded-full text-center placeholder-center border-0"
+        />
+        <button
+          class="w-16 h-16 bg-white rounded-full flex items-center justify-center"
+        >
+          <img src="Images/search.png" alt="Search" class="w-6" />
+        </button>
+      </div>
+      <div class="error hidden text-left text-center mt-2 ml-4 text-white">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather hidden text-white justify-center p-12">
+  <div class="flex justify-center">
+    <img src="Images/rain.png" class="weather-icon w-56 mx-auto mt-8" />
+    <h1 class="temp text-6xl font-semibold">22°C</h1>
+    <h2 class="city text-3xl font-medium">New York</h2>
+  </div>
+
+  <div class="details mt-8 grid gap-4 justify-center md:flex md:justify-between px-4">
+    <div class="col flex items-center bg-gray-500 p-4 rounded-lg">
+      <img src="Images/humidity.png" class="w-10 mr-2" />
+      <div>
+        <p class="humidity text-2xl">50%</p>
+        <p>Humidity</p>
+      </div>
+    </div>
+    <div class="col flex items-center bg-gray-500 p-4 rounded-lg">
+      <img src="Images/wind.png" class="w-10 mr-2" />
+      <div>
+        <p class="wind text-2xl">15 km/hr</p>
+        <p>Wind Speed</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+ <!-- Latest news section -->
+        <div class="bg-white mt-20 py-8 md:w-1/2 md:ml-4">
+          <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 text-center mb-6">
+              Latest News
+            </h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <!-- List of latest news with images -->
+              <ul class="text-left">
+                <li class="news-item flex mb-4">
+                  <img
+                    src="./Images/news1.jpg"
+                    alt="News Image 1"
+                    class="w-16 h-16 mr-4"
+                  />
+                  <p class="flex-grow">
+                    HighWeather releases new mobile app version
+                  </p>
+                </li>
+                <li class="news-item flex mb-4">
+                  <img
+                    src="./Images/real11.webp"
+                    alt="News Image 2"
+                    class="w-16 h-16 mr-4 rounded-full"
+                  />
+                  <p class="flex-grow">
+                    Upcoming feature: Real-time weather alerts
+                  </p>
+                </li>
+                <li class="news-item flex mb-4">
+                  <img
+                    src="./Images/news44.webp"
+                    alt="News Image 3"
+                    class="w-16 h-16 mr-4 rounded-full"
+                  />
+                  <p class="flex-grow">
+                    HighWeather partners with leading weather data providers
+                  </p>
+                </li>
+                <!-- Add more news items with images as needed -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <div class="mb-8">
+            <!-- Embedded video -->
+            <div class="videoWrapper">
+              <!-- Replace VIDEO_ID with the actual video ID from YouTube -->
+              <iframe
+                width="100%"
+                height="300"
+                src="https://www.youtube.com/embed/iesPl7zRbVY"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+  <!-- Footer section -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <!-- Logo -->
+      <img src="./Images/highC.jpeg" alt="Logo" class="w-12 h-12 md:w-24 md:h-24 mb-4 md:mb-0 rounded-full">
+
+      <!-- Newsletter -->
+      <div class="max-w-lg mx-auto mb-4 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
+        <form action="#" method="post" class="flex">
+          <input type="email" name="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-l-lg border-gray-300 focus:outline-none focus:border-blue-400">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Social media links -->
+      <div>
+        <a href="https://www.facebook.com/Quadribola91/" class="text-xl text-white mr-4"><i class="bx bxl-facebook"></i></a>
+        <a href="https://wa.me/+2349058824643" class="text-xl text-white mr-4"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://twitter.com/AbdulahiOmo" class="text-xl text-white"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-4">
+      <p>&copy; 2024 HighCloud Weather App. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js">
+</script>
+  </body>
+</html>
