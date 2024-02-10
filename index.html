@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HighCloud Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-400">
+   <div class="navbar fixed top-0 left-0 w-full z-50 mb-20 bg-gray-400">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="menu-toggle md:hidden">
+          <button id="menuToggleBtn">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+        <div class="logo flex items-center">
+          <img src="Images/highC.jpeg" class="w-12 h-12 rounded-full" />
+          <p class="text-white ml-2">HighCloud Weather</p>
+        </div>
+        <div class="menu-items hidden md:flex space-x-4">
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="About.html" class="text-white">About</a></li>
+            <li><a href="Contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden mb-20">
+        <ul class="flex flex-col space-y-2">
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="index.html" class="text-white">Home</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="About.html" class="text-white">About</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="Contact.html" class="text-white">Contact</a>
+            </button>
+          </li><li>
+            <button class="bg-gray-900 mt-4 p-4">
+              <a href="checkweather.html" class="text-white">Check Weather</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="mt-12">
+    <h2 class="text-center text-white text-3xl font-bold border-1 border:shadow-md">Check Weather </h2>
+  </div>
+
+    <div class="mt-20">
+      <h2 class="text-center text-white text-3xl font-bold border-1 border:shadow-md">Check Weather </h2>
+    </div>
+
+    <div class="card mx-auto my-0 justify-center mb-8">
+      <div class="search flex items-center justify-center px-4">
+        <input
+          type="text"
+          placeholder="Enter city name"
+          spellcheck="false"
+          class="w-3/4 px-4 py-2 bg-white text-black rounded-full text-center placeholder-center border-0"
+        />
+        <button
+          class="w-16 h-16 bg-white rounded-full flex items-center justify-center"
+        >
+          <img src="Images/search.png" alt="Search" class="w-6" />
+        </button>
+      </div>
+      <div class="error hidden text-left text-center mt-2 ml-4 text-white">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather hidden text-white justify-center p-12">
+  <div class="flex justify-center">
+    <img src="Images/rain.png" class="weather-icon w-56 mx-auto mt-8" />
+    <h1 class="temp text-6xl font-semibold">22°C</h1>
+    <h2 class="city text-3xl font-medium">New York</h2>
+  </div>
+
+  <div class="details mt-8 grid gap-4 justify-center md:flex md:justify-between px-4">
+    <div class="col flex items-center bg-gray-500 p-4 rounded-lg">
+      <img src="Images/humidity.png" class="w-10 mr-2" />
+      <div>
+        <p class="humidity text-2xl">50%</p>
+        <p>Humidity</p>
+      </div>
+    </div>
+    <div class="col flex items-center bg-gray-500 p-4 rounded-lg">
+      <img src="Images/wind.png" class="w-10 mr-2" />
+      <div>
+        <p class="wind text-2xl">15 km/hr</p>
+        <p>Wind Speed</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Top Stories section -->
+    <section class="py-12 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-6">Top Stories</h2>
+            <div class="flex flex-col space-y-6">
+                <!-- Top Story 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Moose Chases Skiers Down Slope In Wyoming</h3>
+                    <div class="videoWrapper mb-4">
+                        <img src="./Images/top2.png" class="w-100% h-200">
+                    </div>
+                    <p>Skiers in Teton County, Wyoming, were shocked when a moose barrelled down the mountain with them.</p>
+                      <button class="bg-blue-500 p-3 text-white"><a href="https://weather.com/science/nature/video/moose-chases-skiers-down-slope-in-wyoming">Read More</a></button>
+                  </div>
+                <!-- Top Story 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">South faces wet weekend that could lead to flooding</h3>
+                    <div class="videoWrapper mb-4">
+                       <img src="./Images/top3.png" alt="">
+                    </div>
+                    <p>A wet weekend is in store for the southern U.S. as rounds of rain are expected. 
+                        This may spell trouble for areas with wet soils from central Mississippi to northern Georgia that have seen over 6 inches
+                        of rain in the past month. Repeated rounds of rain tracking along and ahead of the cold front could lead to flash flooding, 
+                        the FOX Forecast Center said.</p>
+                    <button class="bg-blue-500 p-3 text-white"><a href="https://www.foxweather.com/weather-news/daily-weather-update-february-9-2024">Read More</a></button>
+                  </div>
+                <!-- Top Story 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Top Weather Stories For The Week Ahead</h3>
+                    <div class="videoWrapper mb-4">
+                       <img src="./Images/top1.png" alt="">
+                    </div>
+                    <p>a low pressure system tracking out of the Ohio River valley into the Great Lakes means much needed rainfall on wildfires across parts of Canada we're talking one to 2 inches so that's exactly what you need to help out with fire suppression cooler temperatures expected in the northeast as well nothing like cool in Texas in fact record temperatures possible is the lodestar state sees triple digit heat</p>
+                    <button class="bg-blue-500 p-3 text-white"><a href="https://weather.com/news/weather/video/top-weather-stories-for-the-week-ahead-4">Read more</a></button>
+                  </div>
+            </div>
+        </div>
+    </section>
+ <!-- Weather Stories section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-center mb-6">Weather Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Story 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">EARTHQUAKE WATCH‼️ Another Strong M Solar Flare‼️ World Weather Forecast</h3>
+                    <div class="videoWrapper mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VWeXanGEKbg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                
+                </div>
+                <!-- Story 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">NIGERIA WEATHER FORECAST FOR 06/02/2024 WITH THEODORA ETIM</h3>
+                    <div class="videoWrapper mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/n4MOL4fatSM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  
+                </div>
+                <!-- Story 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">California battered by more historic rain and flooding</h3>
+                    <div class="videoWrapper mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/a_q5r-A4daw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+                <!-- Story 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">US ramps up criticism of Israel over Rafah assault • FRANCE 24 English</h3>
+                    <div class="videoWrapper mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/eLDnKkv5nuo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                   
+                </div>
+                <!-- Story 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Weather in 5 An Early Look At Next Week's Storm System, Rain & Snow Possibilities Northeast</h3>
+                    <div class="videoWrapper mb-4">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/U64FVttcw9Q" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Latest News section -->
+  <section class="py-12 mt-8">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-6">Latest News</h2>
+      <div class="flex  justify-between flex flex-col md:flex-row">
+        <button class="bg-gray-900 hover:bg-gray-400 text-white text-center p-2 mb-4 rounded-lg"><a href="https://www.bbc.com/news/world" class="text-white font-medium mr-4">World</a></button>
+        <button class="bg-gray-900 hover:bg-gray-400 text-white p-2 mb-4 rounded-lg"><a href="https://www.goal.com/en-ng" class="text-white font-medium mr-4">Sports</a></button>
+        <button class="bg-gray-900 hover:bg-gray-400 text-white p-2 mb-4 rounded-lg"><a href="https://ew.com/best-nature-documentaries-8547811" class="text-white font-medium mr-4">Wild</a></button>
+        <button class="bg-gray-900 hover:bg-gray-400 text-white p-2 mb-4 rounded-lg"><a href="https://apnews.com/religion" class="text-white font-medium mr-4">Religious</a></button>
+        <button class="bg-gray-900 hover:bg-gray-400 text-white p-2 mb-4 rounded-lg"><a href="https://www.etonline.com/news" class="text-white font-medium mr-4">Entertainment</a></button>
+       
+      </div>
+    </div>
+  </section>
+
+   <div class="mb-8">
+            <!-- Embedded video -->
+            <div class="videoWrapper">
+              <!-- Replace VIDEO_ID with the actual video ID from YouTube -->
+              <iframe
+                width="100%"
+                height="300"
+                src="https://www.youtube.com/embed/iesPl7zRbVY"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+ 
+
+  <!-- Footer section -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <!-- Logo -->
+      <img src="./Images/highC.jpeg" alt="Logo" class="w-12 h-12 md:w-24 md:h-24 mb-4 md:mb-0 rounded-full">
+
+      <!-- Newsletter -->
+      <div class="max-w-lg mx-auto mb-4 md:mb-0">
+        <h3 class="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
+        <form action="#" method="post" class="flex">
+          <input type="email" name="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-l-lg border-gray-300 focus:outline-none focus:border-blue-400">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Social media links -->
+      <div>
+        <a href="https://www.facebook.com/Quadribola91/" class="text-xl text-white mr-4"><i class="bx bxl-facebook"></i></a>
+        <a href="https://wa.me/+2349058824643" class="text-xl text-white mr-4"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://twitter.com/AbdulahiOmo" class="text-xl text-white"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-4">
+      <p>&copy; 2024 HighCloud Weather App. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js">
+</script>
+  </body>
+</html>

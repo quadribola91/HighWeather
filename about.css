@@ -1,0 +1,22 @@
+/* CSS for news animation */
+.news-item {
+  animation: moveNews 5s linear infinite alternate; /* Adjust timing and animation type as needed */
+}
+
+@keyframes moveNews {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px); /* Adjust distance of movement as needed */
+  }
+}
+/* Slide-in animation for the mobile menu */
+@media (max-width: 768px) {
+  .navbar {
+    transition: transform 0.3s ease;
+  }
+  .navbar.hidden {
+    transform: translateX(-100%);
+  }
+}
