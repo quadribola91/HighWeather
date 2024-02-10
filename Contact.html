@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-400">
+    <div class="navbar fixed top-0 left-0 w-full z-50 mb-20 bg-gray-400">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="menu-toggle md:hidden">
+          <button id="menuToggleBtn">
+            <i class="bx bx-menu"></i>
+          </button>
+        </div>
+        <div class="logo flex items-center">
+          <img src="Images/highC.jpeg" class="w-12 h-12 rounded-full" />
+          <p class="text-white ml-2">HighCloud Weather</p>
+        </div>
+        <div class="menu-items hidden md:flex space-x-4">
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="About.html" class="text-white">About</a></li>
+            <li><a href="Contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden mb-20">
+        <ul class="flex flex-col space-y-2">
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="index.html" class="text-white">Home</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="About.html" class="text-white">About</a>
+            </button>
+          </li>
+          <li>
+            <button class="bg-gray-600 p-3">
+              <a href="Contact.html" class="text-white">Contact</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Contact section -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center mb-6 mt-12">
+          Contact Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Partner contacts -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">BIGGY VENTURES</h3>
+            <p>Contact Person: OloruniShola</p>
+            <p>Email: quadriafeez814@gmail.com</p>
+            <p>Phone: +2348033063150</p>
+            <p>Address: 123 Main Street, Ilaro</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">NO WATER NO LIFE</h3>
+            <p>Contact Person: Rafiu Olalekan</p>
+            <p>Email: wmuse112@gmail.com</p>
+            <p>Phone: +2348029469095</p>
+            <p>Address: unity Street Isawo, Ikorodu</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">AFAMAB</h3>
+            <p>Contact Person:Kuburat Kikelomo</p>
+            <p>Email: newabdul91@gmail.com</p>
+            <p>Phone: +2348025274656</p>
+            <p>Address: Igbolomu-Isawo, Ikorodu</p>
+          </div>
+          <!-- Add more partner contacts as needed -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section class="bg-gray-200 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
+        <form action="#" method="post" class="max-w-lg mx-auto">
+          <div class="mb-4">
+            <label for="message" class="block text-lg font-medium"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-2 rounded-lg border-gray-300 focus:outline-none focus:border-blue-400"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="block w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- Logo -->
+        <img
+          src="./Images/highC.jpeg"
+          alt="Logo"
+          class="w-12 h-12 md:w-24 md:h-24 mb-4 md:mb-0 rounded-full"
+        />
+
+        <!-- Newsletter -->
+        <div class="max-w-lg mx-auto mb-4 md:mb-0">
+          <h3 class="text-lg font-semibold mb-2">
+            Subscribe to Our Newsletter
+          </h3>
+          <form action="#" method="post" class="flex">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              class="w-full px-4 py-2 rounded-l-lg border-gray-300 focus:outline-none focus:border-blue-400"
+            />
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+        <!-- Social media links -->
+        <div>
+          <a
+            href="https://www.facebook.com/Quadribola91/"
+            class="text-xl text-white mr-4"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://wa.me/+2349058824643" class="text-xl text-white mr-4"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a href="https://twitter.com/AbdulahiOmo" class="text-xl text-white"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p>&copy; 2024 HighCloud Weather App. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
