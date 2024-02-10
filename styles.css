@@ -1,0 +1,21 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./Images/new001.png"); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+@media (max-width: 768px) {
+  .navbar {
+    transition: transform 0.3s ease;
+  }
+  .navbar.hidden {
+    transform: translateX(-100%);
+  }
+}
