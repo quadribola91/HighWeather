@@ -21,48 +21,57 @@
   </head>
   <body class="bg-gray-400">
    <div class="navbar fixed top-0 left-0 w-full z-50 mb-20 bg-gray-400">
-      <div class="navbar flex justify-between items-center p-4">
-        <div class="menu-toggle md:hidden">
-          <button id="menuToggleBtn">
-            <i class="bx bx-menu"></i>
-          </button>
-        </div>
-        <div class="logo flex items-center">
-          <img src="Images/highC.jpeg" class="w-12 h-12 rounded-full" />
-          <p class="text-white ml-2">HighCloud Weather</p>
-        </div>
-        <div class="menu-items hidden md:flex space-x-4">
-          <ul class="flex space-x-4">
-            <li><a href="index.html" class="text-white">Home</a></li>
-            <li><a href="About.html" class="text-white">About</a></li>
-            <li><a href="Contact.html" class="text-white">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+      <header class="bg-white">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex-1 md:flex md:items-center md:gap-12">
+            <a class="block text-teal-600" href="index.html">
+              <span class="sr-only">Home</span>
+              <img src="./Images/highC.jpeg" class="w-16 h"/>
+            </a>
+          </div>
 
-      <div id="mobileMenu" class="md:hidden hidden mb-20">
-        <ul class="flex flex-col space-y-2">
-          <li>
-            <button class="bg-gray-600 p-3">
-              <a href="index.html" class="text-white">Home</a>
+          <!-- Large Screen Menu (Hidden on Small Screens) -->
+          <nav class="hidden md:flex md:gap-12">
+            <ul class="flex space-x-8">
+              <li>
+                <a class="text-gray-600 hover:text-gray-700" href="checkweather.html">Check Weather</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-700" href="About.html">About</a>
+              </li>
+              <li>
+                <a class="text-gray-600 hover:text-gray-700" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button id="menuToggleBtn" class="block text-gray-600 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </button>
-          </li>
-          <li>
-            <button class="bg-gray-600 p-3">
-              <a href="About.html" class="text-white">About</a>
-            </button>
-          </li>
-          <li>
-            <button class="bg-gray-600 p-3">
-              <a href="Contact.html" class="text-white">Contact</a>
-            </button>
-          </li><li>
-            <button class="bg-gray-900 mt-4 p-4">
-              <a href="Contact.html" class="text-white">Check Weather</a>
-            </button>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <nav id="mobileMenu" class="hidden md:hidden">
+          <ul class="mt-2 px-4">
+            <li>
+              <a class="block py-2 px-4 text-white bg-gray-600 hover:bg-gray-300" href="checkweather.html">Check Weather</a>
+            </li>
+            <li>
+              <a class="block py-2 px-4 text-gray-600 hover:bg-gray-100" href="About.html">About</a>
+            </li>
+            <li>
+              <a class="block py-2 px-4 text-gray-600 hover:bg-gray-100" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </header>
     </div>
 
 <section class="mt-12 mb-20 h-600">
